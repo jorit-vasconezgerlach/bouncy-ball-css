@@ -1,0 +1,68 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Helvetica Neue', sans-serif;
+}
+body {
+          height: 100vh;
+          overflow: hidden;
+          position: relative;
+          background: #000000;
+}
+.ball {
+          left: 50%;
+          bottom: 50%;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          border-radius: 100%;
+          background: #CA3216;
+          transform: translate(-50%, 50%);
+          animation: bounce1 2s ease-in-out infinite; /* From bounce1 to bounce2 */
+}
+.ball h1 {
+          text-align: center;
+          width: max-content;
+          top: -4rem;
+          left: 50%;
+          position: absolute;
+          color: #FFFFFF;
+          transform: translateX(-50%);
+          word-wrap: normal;
+}
+
+@keyframes  bounce1 {
+          0% {
+          }
+          30% {
+                    width: 200px;
+          }
+          45% {
+                    width: 300px;
+                    bottom: -2%;
+          }
+          65% {
+                    width: 150px;
+          }
+          100% {
+                    border-radius: 100%;
+          }
+}
+@keyframes  bounce2 {
+          0% {
+          }
+          30% {
+                    width: 200px;
+          }
+          45% {
+                    width: 250px;
+                    bottom: 12%;
+          }
+          65% {
+                    width: 150px;
+          }
+          100% {
+                    border-radius: 100%;
+          }
+}
